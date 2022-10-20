@@ -4,6 +4,7 @@ import TaskListComponent from "./components/TaskListComponent";
 import TaskCreateComponent from "./components/TaskCreateComponent";
 import TaskShowComponent from "./components/TaskShowComponent";
 import TaskEditComponent from "./components/TaskEditComponent";
+import FindCardComponent from "./components/FindCardComponent";
 require('./bootstrap');
 
 window.Vue = require('vue');
@@ -34,6 +35,11 @@ const router = new VueRouter({
             name: 'task.edit',
             component: TaskEditComponent,
             props: true
+        },
+        {
+            path: '/find',
+            name: 'find.card',
+            component: FindCardComponent,
         },
     ]
 });
